@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var chuoi = prompt();
+    chuoi.toString();
+    var upper = 'ABCDEFGHIJLVNOPQRSTUVWXYZ';
+    var lower = 'abcdefghijklmnopqrstuvwxyz';
+    var result = [];
+    for (var i = 0; i < chuoi.length; i++) {
+        if (upper.indexOf(chuoi[i]) !== -1){
+            result.push(chuoi[i].toLowerCase());
+        } else if (lower.indexOf(chuoi[i]) !== -1){
+            result.push(chuoi[i].toUpperCase());
+        }
+        else {
+            result.push(chuoi[i]);
+        }
+    }
+    document.write(result.join(''));
+</script>
+</body>
+</html>
